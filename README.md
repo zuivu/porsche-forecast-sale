@@ -33,7 +33,12 @@ For each vehicle group (64 vehicles), we have 18 features:
 6. Quota:
     1. quota__vehiclegroup01__aq;
 
+![Internal feature image]("img\internal_feature_metadata.png")
+
+
 ### 1.2. Global features (1217 in total)
+![External feature image]("img\external_feature_metadata.png")
+
 
 ## 2. Questions to Porsche
 - What does cp stand for? sales_flow_monthly__cp8 -> production: central point 8 (1 to 8) 8 means it is finished and at the end of the conveyer belt
