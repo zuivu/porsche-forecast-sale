@@ -17,6 +17,10 @@ physical: car is physically on the dealer's side, e.g. in the Porsche center
 - Does physical & grossall data inclzde the netimporteranddealer?
 
 - premises_in_sales : Local sales on Porsches own sales sides
+Start of prod, start of sales -> Macan: just had start of sales, customers can now order it. Stock is prepared and now customers can order the car. End of prod: car is not produced in factory but can still be bought.
+If all cars produced have been sold, than this is called end of sales.
+
+These dates are called premises.
 
 
 phd? 
