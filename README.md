@@ -12,9 +12,6 @@
 - [ ] cut the first 60 values
 
 
-## model Building
--[] cut the first 60 values 
-
 
 Questions:
 - What is the start date of the data?
