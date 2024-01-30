@@ -127,3 +127,24 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+
+## Unique porsche internal features
+sales_actuals_monthly__vehiclegroup01__orderintake
+sales_actuals_monthly__vehiclegroup01__retail
+sales_flow_monthly__vehiclegroup01__cp8
+sales_stock_monthly__vehiclegroup01__physical
+sales_stock_monthly__vehiclegroup01__grossall
+sales_stock_monthly__vehiclegroup01__netimporteranddealer
+customer_vehicle_relationships__vehiclegroup01__terminated_cars
+customer_vehicle_relationships__vehiclegroup01__active_cars
+leads__vehiclegroup01__won
+leads__vehiclegroup01__first_touch_point
+leads__vehiclegroup01__lost
+leasing_contracts__vehiclegroup01__end
+leasing_contracts__vehiclegroup01__start
+premises__vehiclegroup01__flag_order_start
+premises__vehiclegroup01__in_sales
+premises__vehiclegroup01__flag_production_start
+premises__vehiclegroup01__in_production
+quota__vehiclegroup01__aq
