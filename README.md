@@ -34,6 +34,7 @@ For each vehicle group (64 vehicles), we have 18 features:
     1. quota__vehiclegroup01__aq;
 
 ![Internal feature image](img\internal_feature_metadata.png)
+![Number of features for each vehicle](img\vehicle_vs_internal_features.png)
 
 
 ### 1.2. Global features (1217 in total)
