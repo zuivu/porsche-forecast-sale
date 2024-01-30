@@ -1,5 +1,15 @@
 # Bis Group6
 
+## Quick insights (work in progress)
+- Number of vehicles groups: 01 -> 64
+- Sale data:
+    'sales_actuals_monthly__orderintake': how many orders,
+    'sales_actuals_monthly__retail': how many actually buy/sale,
+    'sales_flow_monthly__cp8': production,
+    'sales_stock_monthly__physical': !! (most important) how many cars physically are on stock for each country,
+    'sales_stock_monthly__grossall': total cars on stoks (indepedent from order state) ,
+    'sales_stock_monthly__netimporteranddealer': ,
+    'premises__in_sales'
 
 ## Questions to Porsche
 - What does cp stand for? sales_flow_monthly__cp8 -> production: central point 8 (1 to 8) 8 means it is finished and at the end of the conveyer belt
