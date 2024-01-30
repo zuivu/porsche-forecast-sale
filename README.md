@@ -3,6 +3,15 @@
 ## Todo's
 ### Feature Engineering
 - [ ] Building a month feature. Instead of 1-255 use 1 to 12
+### Features: filling up missing feature values (NaN)
+- [ ] Fill missing values (NaN values) for interal features
+- [ ] leads: null, mean, ...
+- [ ] premises: null 
+
+
+
+
+
 
 
 ## 1. Features information 
@@ -31,7 +40,7 @@ For each vehicle group (64 vehicles), we have 18 features:
 
 5. Premises:
     1. premises__vehiclegroup01__flag_production_start
-    2. premises__vehiclegroup01__flag_order_start;
+    2. premises__vehiclegroup01__flag_order_start; (category data)
     3. premises__vehiclegroup01__in_sales;
     4. premises__vehiclegroup01__in_production;
 
