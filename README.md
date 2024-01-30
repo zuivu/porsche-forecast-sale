@@ -1,6 +1,28 @@
 # Bis Group6
 
 
+## Questions to Porsche
+- What does cp stand for? sales_flow_monthly__cp8 -> production: central point 8 (1 to 8) 8 means it is finished and at the end of the conveyer belt
+- sales_stock: cars physically at the Porsche center; in Europe less countries in stock than in US or China as the transport ways are shorter over here; Chinese dealers just order cars without having customer requests; 
+- sales stock: still at side, on a ship (import), at dealers- grossall: all cars in stock (produced but not retailed yet), independent of order is behind it or not; n
+
+- What is sales_stock_monthly_netimporteranddealer 
+Cars that have left the prodcution; either on importer or on dealer leevl; NET means no customer order connected to it -> customer is yet to be found
+
+gross-all: total cars in stock; also cars that do not have an order from the customer (independent from order status)
+physical: car is physically on the dealer's side, e.g. in the Porsche center
+
+
+
+- Does physical & grossall data inclzde the netimporteranddealer?
+
+- premises_in_sales : Local sales on Porsches own sales sides
+
+
+phd? 
+
+
+
 
 ## Getting started
 
