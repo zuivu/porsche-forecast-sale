@@ -7,10 +7,21 @@
 - [ ] Fill missing values (NaN values) for interal features
 - [ ] leads: null, mean, ...
 - [ ] premises: null 
+- [ ] quotas: set null, mean of month, 
+- [ ] sales_stock_monthly__vehiclegroup01: mean per month
+- [ ] cut the first 60 values
 
 
+## model Building
+-[] cut the first 60 values 
 
 
+Questions:
+- What is the start date of the data?
+- What are the premises categories? (Categories?, for example flag_order_start should be "date at which the model can be officially ordered". but there are no dates?)
+- Why are there some missing values? (for example: quotas)
+- Can you explain outliers for values?
+- 
 
 
 
@@ -47,12 +58,12 @@ For each vehicle group (64 vehicles), we have 18 features:
 6. Quota:
     1. quota__vehiclegroup01__aq;
 
-![Internal feature image](img/internal_feature_metadata.png)
-![Number of features for each vehicle](img/vehicle_vs_internal_features.png)
+![Internal feature image](img\internal_feature_metadata.png)
+![Number of features for each vehicle](img\vehicle_vs_internal_features.png)
 
 
 ### 1.2. Global features (1217 in total)
-![External feature image](img/external_feature_metadata.png)
+![External feature image](img\external_feature_metadata.png)
 
 
 ## 2. Questions to Porsche
@@ -73,6 +84,12 @@ physical: car is physically on the dealer's side, e.g. in the Porsche center
 - premises_in_sales : Local sales on Porsches own sales sides
 Start of prod, start of sales -> Macan: just had start of sales, customers can now order it. Stock is prepared and now customers can order the car. End of prod: car is not produced in factory but can still be bought.
 If all cars produced have been sold, than this is called end of sales.
+
+- What is the start date of the data?
+- What are the premises categories? (Categories?, for example flag_order_start should be "date at which the model can be officially ordered". but there are no dates?)
+- Why are there some missing values? (for example: quotas)
+- Can you explain outliers for values?
+- 
 
 These dates are called premises.
 
