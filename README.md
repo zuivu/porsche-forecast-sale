@@ -1,5 +1,10 @@
 # Bis Group6
 
+## Todo's
+### Feature Engineering
+- [ ] Building a month feature. Instead of 1-255 use 1 to 12
+
+
 ## 1. Features information 
 ### 1.1. Internal features (1152 in total)
 For each vehicle group (64 vehicles), we have 18 features:  
