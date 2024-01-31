@@ -55,12 +55,13 @@ For each vehicle group (64 vehicles), we have 18 features:
 6. Quota:
     1. quota__vehiclegroup01__aq;
 
-![Internal feature image](img\internal_feature_metadata.png)
-![Number of features for each vehicle](img\vehicle_vs_internal_features.png)
+![Internal feature image](img/internal_feature_metadata.png)
+![Number of features for each vehicle](img/vehicle_vs_internal_features.png)
 
 
 ### 1.2. Global features (1217 in total)
-![External feature image](img\external_feature_metadata.png)
+![External feature image](img/external_feature_metadata.png)
+
 
 
 ## 2. Questions to Porsche
