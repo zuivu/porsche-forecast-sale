@@ -35,7 +35,19 @@ Informations from first Q&A:
 - data over the month 258: are they predicted or actual data?: they are predicitons from other companies or porsche itself  
 - data is not open source, data is correct in a way the data can be correct   
 
+Information from second Q&A:
+- Porsche VM Datenbank: can't get access
+- can use https://newsroom.porsche.com/de.html 
+- if we need some special pictures we can ask 
+- orderintakes: negative values, cleansings in the demand databank, data cleansing could lead to negative values, dead entries deleted
+- some anomalies are deleted but not all could be resolved
+- porsche most of the time don't own the dealers 
+- depth of the presentation: 
+- for the storyline or processing it could help to focus on the data preprocessing if we could find something special 
+- take the time of the presentation for the results 
 
+need a general storyline for the presentation 
+thursday will also be remote and they are not here 
 
 
 
