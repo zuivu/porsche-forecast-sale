@@ -1,127 +1,24 @@
-# Bis Group6
+# BIS Group 6 - Submission
 
-## Todo's
-### Feature Engineering
-- [ ] Building a month feature. Instead of 1-255 use 1 to 12
-### Features: filling up missing feature values (NaN)
-- [ ] Fill missing values (NaN values) for interal features
-- [ ] leads: null, mean, ...
-- [ ] premises: null 
-- [ ] quotas: set null, mean of month, 
-- [ ] sales_stock_monthly__vehiclegroup01: mean per month
-- [ ] cut the first 60 values
+The structure of this folder:
 
+### scripts:
+- model.ipynb: our current notebook with our meta model
+- features_final_v2.ipynb: our feature preperation pipeline
 
+### output_data:
+- 2 runs of output data
+- each run contains:
+    - a list with columns that have NaN values for the future
+    - a list with columns that have predictions instead of NaN values for the future
+    - the preprocessed datalist (with columns created by our 5 methods)
+    - the feature importance list with is created via shap
+    - the feature importance list created via .corr()
 
-Questions:
-- What is the start date of the data?
-    - can't tell us this, have to mask the date 
-- Can you explain outliers for values?
-- 
+### data:
+- the input data
 
-Informations from first Q&A:
+### archive:
+- old but still interesting code
 
-- vehiclegroups: for every modell there are different configurations, groups of derivates or derivates on its own, some of the model series are more stable, some vehiclegroups have only a few values as gt3 that are not that often sold 
-- dashboard: can build a dashboard artefact with other plattforms than power bi 
-- can use jupiter notebook 
-- r shiny app
-- artefact that has something todo with the case doesn't need to be a dashboard 
-- datavisualisation and dashboard as awards can be both done with a dashboard
-- can use powerpoint presentation for the datavisualisation 
-- month 258 is not that fare away in the past, not 2023, but a few years ago 
-- not given that the countries are all in europe, saisonality doesn't need to be our winter and summer, could be from the south  part of the earth 
-- can't tell us the country, the exact date 
-- not important to reconstruct the data to the real date and country
-- data over the month 258: are they predicted or actual data?: they are predicitons from other companies or porsche itself  
-- data is not open source, data is correct in a way the data can be correct   
-
-Information from second Q&A:
-- Porsche VM Datenbank: can't get access
-- can use https://newsroom.porsche.com/de.html 
-- if we need some special pictures we can ask 
-- orderintakes: negative values, cleansings in the demand databank, data cleansing could lead to negative values, dead entries deleted
-- some anomalies are deleted but not all could be resolved
-- porsche most of the time don't own the dealers 
-- depth of the presentation: 
-- for the storyline or processing it could help to focus on the data preprocessing if we could find something special 
-- take the time of the presentation for the results 
-
-need a general storyline for the presentation 
-thursday will also be remote and they are not here 
-
-
-
-## 1. Features information 
-### 1.1. Internal features (1152 in total)
-For each vehicle group (64 vehicles), we have 18 features:  
-1. Sales info:
-    1. **sales_actuals_monthly__vehiclegroup01__orderintake**: TARGET VARIABLE
-    2. sales_actuals_monthly__vehiclegroup01__retail;
-    3. sales_flow_monthly__vehiclegroup01__cp8;
-    4. sales_stock_monthly__vehiclegroup01__physical;
-    5. sales_stock_monthly__vehiclegroup01__grossall;
-    6. sales_stock_monthly__vehiclegroup01__netimporteranddealer;
-
-2. Customer relationship:
-    1. customer_vehicle_relationships__vehiclegroup01__active_cars;
-    2. customer_vehicle_relationships__vehiclegroup01__terminated_cars;
-
-3. Leading
-    1. leads__vehiclegroup01__first_touch_point;
-    2. leads__vehiclegroup01__won;
-    3. leads__vehiclegroup01__lost;
-
-4. Leasing:
-    1. leasing_contracts__vehiclegroup01__start;
-    2. leasing_contracts__vehiclegroup01__end;
-
-5. Premises:
-    1. premises__vehiclegroup01__flag_production_start
-    2. premises__vehiclegroup01__flag_order_start; (category data)
-    3. premises__vehiclegroup01__in_sales;
-    4. premises__vehiclegroup01__in_production;
-
-6. Quota:
-    1. quota__vehiclegroup01__aq;
-
-![Internal feature image](img/internal_feature_metadata.png)
-![Number of features for each vehicle](img/vehicle_vs_internal_features.png)
-
-
-### 1.2. Global features (1217 in total)
-![External feature image](img/external_feature_metadata.png)
-
-
-
-## 2. Questions to Porsche
-- What does cp stand for? sales_flow_monthly__cp8 -> production: central point 8 (1 to 8) 8 means it is finished and at the end of the conveyer belt
-- sales_stock: cars physically at the Porsche center; in Europe less countries in stock than in US or China as the transport ways are shorter over here; Chinese dealers just order cars without having customer requests; 
-- sales stock: still at side, on a ship (import), at dealers- grossall: all cars in stock (produced but not retailed yet), independent of order is behind it or not; n
-
-- What is sales_stock_monthly_netimporteranddealer 
-Cars that have left the prodcution; either on importer or on dealer leevl; NET means no customer order connected to it -> customer is yet to be found
-
-gross-all: total cars in stock; also cars that do not have an order from the customer (independent from order status)
-physical: car is physically on the dealer's side, e.g. in the Porsche center
-
-
-
-- Does physical & grossall data inclzde the netimporteranddealer?
-
-- premises_in_sales : Local sales on Porsches own sales sides
-Start of prod, start of sales -> Macan: just had start of sales, customers can now order it. Stock is prepared and now customers can order the car. End of prod: car is not produced in factory but can still be bought.
-If all cars produced have been sold, than this is called end of sales.
-
-- What is the start date of the data?
-- What are the premises categories? (Categories?, for example flag_order_start should be "date at which the model can be officially ordered". but there are no dates?)
-- Why are there some missing values? (for example: quotas)
-- Can you explain outliers for values?
-- 
-
-These dates are called premises.
-
-
-phd? 
-
-
-
+### and our predictions plus two result charts
