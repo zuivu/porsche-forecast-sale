@@ -15,10 +15,39 @@
 
 Questions:
 - What is the start date of the data?
-- What are the premises categories? (Categories?, for example flag_order_start should be "date at which the model can be officially ordered". but there are no dates?)
-- Why are there some missing values? (for example: quotas)
+    - can't tell us this, have to mask the date 
 - Can you explain outliers for values?
 - 
+
+Informations from first Q&A:
+
+- vehiclegroups: for every modell there are different configurations, groups of derivates or derivates on its own, some of the model series are more stable, some vehiclegroups have only a few values as gt3 that are not that often sold 
+- dashboard: can build a dashboard artefact with other plattforms than power bi 
+- can use jupiter notebook 
+- r shiny app
+- artefact that has something todo with the case doesn't need to be a dashboard 
+- datavisualisation and dashboard as awards can be both done with a dashboard
+- can use powerpoint presentation for the datavisualisation 
+- month 258 is not that fare away in the past, not 2023, but a few years ago 
+- not given that the countries are all in europe, saisonality doesn't need to be our winter and summer, could be from the south  part of the earth 
+- can't tell us the country, the exact date 
+- not important to reconstruct the data to the real date and country
+- data over the month 258: are they predicted or actual data?: they are predicitons from other companies or porsche itself  
+- data is not open source, data is correct in a way the data can be correct   
+
+Information from second Q&A:
+- Porsche VM Datenbank: can't get access
+- can use https://newsroom.porsche.com/de.html 
+- if we need some special pictures we can ask 
+- orderintakes: negative values, cleansings in the demand databank, data cleansing could lead to negative values, dead entries deleted
+- some anomalies are deleted but not all could be resolved
+- porsche most of the time don't own the dealers 
+- depth of the presentation: 
+- for the storyline or processing it could help to focus on the data preprocessing if we could find something special 
+- take the time of the presentation for the results 
+
+need a general storyline for the presentation 
+thursday will also be remote and they are not here 
 
 
 
